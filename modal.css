@@ -1,0 +1,110 @@
+.carddescription {
+  text-decoration: none;
+  color: white !important;
+}
+
+.carddescription:focus {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in;
+  -moz-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+  pointer-events: none;
+  box-shadow: 0px 1rem 1rem white;
+}
+.representingiconpopped {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 8rem;
+}
+.representingiconpopped svg {
+  scale: 4;
+  opacity: 0.6;
+}
+
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 80%;
+  height: 80vh;
+  overflow: auto;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  background: #242289;
+}
+
+.close {
+  padding: 0;
+  color: #f08310;
+  line-height: 2rem;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  top: 10px;
+  width: 2rem;
+  text-decoration: none;
+  background: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.close:hover {
+  color: black;
+}
+
+.poppedimageandtext {
+  max-width: 90%;
+  display: flex;
+  margin-bottom: 5rem;
+  justify-content: space-around;
+}
+
+.poppedimageandtext img {
+  width: 50%;
+  z-index: 3;
+  margin-top: 5rem;
+  margin-left: 4rem;
+}
+
+.poppedimageandtext p {
+  max-width: 45%;
+  color: white;
+  font-weight: 300;
+  line-height: 2rem;
+  margin-top: 7rem;
+  margin-left: 3rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .poppedimageandtext {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .poppedimageandtext img {
+    width: 100%;
+  }
+  .poppedimageandtext p {
+    max-width: 100%;
+  }
+}

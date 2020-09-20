@@ -1,0 +1,100 @@
+.form {
+  margin-top: 3rem;
+  margin-left: 15rem;
+  height: 70vh;
+}
+
+.naming,
+.contacting {
+  display: flex;
+  justify-content: center;
+}
+
+.group {
+  margin-bottom: 1.5rem;
+}
+
+.group input {
+  box-shadow: none;
+  width: 15rem;
+  background: transparent;
+  height: 1.5rem;
+  border: none;
+  margin: 1rem 0.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-weight: 300;
+  outline: none;
+  border-bottom: 1px solid white;
+}
+
+.formlabel {
+  position: relative;
+  color: white;
+  right: 15rem;
+}
+
+.group input:hover ~ .formlabel,
+input:valid ~ .formlabel {
+  bottom: 1.3rem;
+}
+
+input:invalid {
+  box-shadow: 0 1px 0px red;
+  border: none;
+}
+
+.comments .group input {
+  width: 36rem;
+}
+.comments .group label {
+  right: 36rem;
+}
+
+.group .emailin {
+  position: relative;
+
+  left: 1.8rem;
+}
+
+.group .emailla {
+  right: 13.2rem;
+}
+
+.radiobuttons {
+  display: flex;
+  width: 35rem;
+  position: relative;
+  left: 9rem;
+}
+
+.radiogroup {
+  position: relative;
+  left: 5rem;
+  margin: 2rem;
+}
+
+.radiogroup label {
+  color: #ffffff;
+}
+
+.radiogroup .input {
+  color: #f08310;
+}
+
+.form .subheading {
+  position: relative;
+  margin-bottom: 5rem;
+  right: 2rem;
+}
+.form button {
+  position: relative;
+  font-weight: 500;
+  right: 4rem;
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+
+  color: rgba(36, 34, 137, 1);
+  background-color: #ffffff;
+}

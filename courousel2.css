@@ -1,0 +1,30 @@
+.mySlides2 {
+  display: none;
+}
+
+/* Slideshow container */
+.slideshow-container2 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.sixthland .dots {
+  position: absolute;
+  bottom: 0;
+}
+.sixthland .dot {
+  height: 7px;
+  width: 7px;
+  position: relative;
+  margin: 0.5rem 0.2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.sixthland .active {
+  background-color: #f08310 !important;
+}
